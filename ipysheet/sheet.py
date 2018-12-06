@@ -48,7 +48,7 @@ class Cell(widgets.Widget):
             value = _transpose(value)
         row_length = self.row_end - self.row_start + 1
         if row_length != len(value):
-             raise ValueError("length or array (%d) doesn't match number of rows (%d)" % (len(value), row_length))
+            raise ValueError("length or array (%d) doesn't match number of rows (%d)" % (len(value), row_length))
         column_length = self.column_end - self.column_start + 1
         for row in value:
             if column_length != len(row):
